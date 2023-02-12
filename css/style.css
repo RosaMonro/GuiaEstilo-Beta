@@ -1,3 +1,83 @@
-hi {
-  color: black;
+:root {
+  --color-blue-1: #5CE0D8;
+  --color-blue-2: #EEFCFB;
+  --color-yellow-1: #FFCF43;
+  --color-yellow-2: #FFF5D6;
+  --color-black: #050720;
+  --color-white: #FFFFFF;
+}
+
+h1,
+.h1 {
+  font-size: 50px;
+}
+
+h2,
+.h2 {
+  font-size: 40px;
+}
+
+h3,
+.h3 {
+  font-size: 35px;
+}
+
+h4,
+.h4 {
+  font-size: 30px;
+}
+
+h5,
+.h5 {
+  font-size: 25px;
+}
+
+h6,
+.h6 {
+  font-size: 20px;
+}
+
+.color-bg--blue-1 {
+  background-color: var(--color-blue-1);
+}
+
+.color-bg--blue-2 {
+  background-color: var(--color-blue-2);
+}
+
+.color-bg--yellow-1 {
+  background-color: var(--color-yellow-1);
+}
+
+.color-bg--yellow-2 {
+  background-color: var(--color-yellow-2);
+}
+
+.color-bg--black {
+  background-color: var(--color-black);
+}
+
+.color-bg--white {
+  background-color: var(--color-white);
+}
+
+.color-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.color-container__primary,
+.color-container__secondary {
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.color-container__text--white {
+  color: var(--color-white);
 }
