@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-blue-1: #5CE0D8;
   --color-blue-2: #EEFCFB;
@@ -7,34 +8,53 @@
   --color-white: #FFFFFF;
 }
 
+html {
+  font-family: "Lalezar", serif;
+  font-family: "Maitree", serif;
+}
+
+body {
+  background-color: silver;
+}
+
+.main {
+  background-color: #FFFFFF;
+  padding: 10px 40px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /*si no pongo esto, cuando aumente el padding, la caja blanca crecerá y dejará de estar centrada (tendría q ajustar el margin)*/
+  width: 60%;
+  margin: 0 20% 0; /*le he dicho que se sitúe al 30% del espacio del padre, pq sumado a los otros 30 y a los 40 que mide el div, suman 100*/
+  border-radius: 15px;
+}
+
 h1,
 .h1 {
-  font-size: 50px;
+  font-size: 128px;
 }
 
 h2,
 .h2 {
-  font-size: 40px;
+  font-size: 96px;
 }
 
 h3,
 .h3 {
-  font-size: 35px;
+  font-size: 64px;
 }
 
 h4,
 .h4 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 h5,
 .h5 {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 h6,
 .h6 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .color-bg--blue-1 {
@@ -75,9 +95,47 @@ h6,
   padding: 2px;
   text-align: center;
   border: 2px solid black;
-  border-radius: 15px;
+}
+
+form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  margin: 0 5% 0;
+  padding: 10px 20px;
+  background-color: var(--color-blue-1);
+  color: var(--color-blue-2);
+  border-radius: 38px;
+}
+
+.form, textarea {
+  font-size: 1em;
+  border: solid 1px var(--color-blue-2);
+  border-radius: 8px;
+  width: 100%;
+}
+
+[type=checkbox]:checked {
+  -webkit-box-shadow: 0 0 0 3px var(--color-blue-1);
+          box-shadow: 0 0 0 3px var(--color-blue-1);
+}
+
+[type=submit] {
+  margin: 15px 300px;
 }
 
 .color-container__text--white {
   color: var(--color-white);
+}
+
+.section__titles {
+  text-decoration: underline;
+}
+
+section {
+  margin: 48px 0;
+}
+
+.whereas__margin {
+  margin: 12px 0;
 }
