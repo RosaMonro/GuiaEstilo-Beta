@@ -1,6 +1,6 @@
 form {
     box-sizing: border-box;  
-    width: 90%;
+    width: 50%;
     margin: 0 5% 0;
     padding: 10px 20px;
     background-color: var(--color-blue-1);
@@ -11,15 +11,34 @@ form {
 .form, textarea {
     font-size: 1em;
     border: solid 1px var(--color-blue-2);
-    border-radius: 8px;
+    border-radius: 5px;
     width: 100%;
   }
+
+   input {
+    border-radius: 5px;
+    border: none;
+   }
   
-[type="checkbox"]:checked {
-    box-shadow: 0 0 0 3px var(--color-blue-1);
+ 
+  [type="submit"] {
+    justify-content: center;
+    margin: 12px auto;
+    width: 110px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-blue-2);
+    color: var(--color-blue-1);
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Maitree', sans-serif;
+    border: #FFFFFF 0.2rem solid;
   }
   
-[type="submit"] {
-    margin: 15px 300px;
+  [type="submit"]:hover {
+    background-color: var(--color-blue-1);
+    border: #FFFFFF 0.2rem solid;
+    color: var(--color-blue-2);
   }
-  
